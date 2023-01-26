@@ -17,7 +17,8 @@
 }
 
 body {
-    font-family: 'Roboto'
+    font-family: 'Roboto';
+    background-color: var(--bg-color-two, #E5E5E5);
 }
 
 .link {
@@ -119,15 +120,76 @@ color:var(--logo-color-dark, #000000);
 
 
 .section-title-button {
-width: 200px;
-height: 50px;
-background: var(--bg-color-five, #2196F3);
-color: var(--text-color-four, #FFFFFF);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-font-size: 16px;
-font-weight: 700;
-line-height: 30px;
-letter-spacing: 0.06em;
-text-align: center;
+    width: 200px;
+    height: 50px;
+    background: var(--bg-color-five, #2196F3);
+    color: var(--text-color-four, #FFFFFF);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
 }
+
+.section-fourpharagraf {
+    width: 1600px;    
+}
+
+.section-fourpharagraf-list {
+    padding-top: 24px; 
+    padding-left: 215px; 
+    padding-right: 215px; 
+    display: flex; 
+    justify-content: space-between; 
+    list-style-type: none;
+} 
+
+.section-fourpharagraf-title {
+    color: var(--text-color-two, #212121);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;    
+    }
+
+.section-fourpharagraf-text {
+    height: 75px;
+    width: 270px;
+    border-radius: nullpx;
+    color: var(--text-color-tree, #757575);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;   
+    }
+
+    .section-areaofinterest {
+        width: 1600px;    
+    }
+    
+    .section-areaofinterest-list {
+        padding-top: 24px; 
+        padding-left: 215px; 
+        padding-right: 215px; 
+        display: flex; 
+        justify-content: space-between; 
+        list-style-type: none;
+    } 
+
+    .section-areaofinterest-title {
+        padding-top: 94px;
+        color: var(--text-color-two, #212121);
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        }    
+
+    
+
