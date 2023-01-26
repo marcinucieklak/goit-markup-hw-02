@@ -1,0 +1,16 @@
+/* Zadanie domowe studentów #2 */
+
+:root {
+    --brand-color: #2196F3;
+}
+
+body {
+    font-family: 'Roboto'
+}
+
+.header {
+    height: 80px;
+    width: 1600px;
+    display: flex;
+    justify-content: space-between;
+}
