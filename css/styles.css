@@ -1,5 +1,7 @@
 /* Zadanie domowe studentów #2 */
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+
 :root {
     --logo-color: #2196F3;
     --logo-color-dark: #000000;
@@ -15,11 +17,13 @@
     --bg-color-tree: #F5F4FA;
     --bg-color-four: #2F303A;
     --bg-color-five: #2196F3;
+    --border-color-one: #EEEEEE;
 }
 
 body {
-    font-family: 'Roboto';
+    font-family: "Roboto", "Raleway", sans-serif;
     background-color: var(--bg-color-one, #FFFFFF);
+    color: var(--text-collor-one, #000000);
 }
 
 .link {
@@ -35,7 +39,17 @@ link:hover, link:focus {
     color: var(--text-color-two, #212121);
     font-size: 14px;
     font-weight: 500;
-    line-height: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: left
+}
+
+.header-link-navigation-selected {
+    margin-inline: 32px;
+    color: var(--text-color-five, #2196F3);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: left
 }
@@ -49,7 +63,7 @@ link:hover, link:focus {
     color: var(--text-color-tree, #757575);
     font-size: 14px; 
     font-weight: 500; 
-    line-height: 16px; 
+    line-height: 1.1; 
     letter-spacing: 0.02em; 
     text-align: left;
 }
@@ -71,7 +85,7 @@ link:hover, link:focus {
     padding-left: 215px; 
     font-size: 26px;
     font-weight: 700;
-    line-height: 31px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: left;   
 }
@@ -113,7 +127,7 @@ link:hover, link:focus {
     padding-top: 200px;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.4;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -126,19 +140,20 @@ link:hover, link:focus {
     color: var(--text-color-four, #FFFFFF);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    cursor: pointer; 
     font-size: 16px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 2;
     letter-spacing: 0.06em;
     text-align: center;
 }
 
 .section-fourpharagraf {
-    width: 1600px;    
+    width: 1600px;
+    padding-top: 24px;
 }
 
 .section-list {
-    padding-top: 24px; 
     padding-left: 215px; 
     padding-right: 215px; 
     display: flex; 
@@ -150,7 +165,7 @@ link:hover, link:focus {
     color: var(--text-color-two, #212121);
     font-size: 14px;
     font-weight: 700;
-    line-height: 16px;
+    line-height: 1.1;
     letter-spacing: 0.03em;
     text-align: left;
     text-transform: uppercase;    
@@ -163,13 +178,14 @@ link:hover, link:focus {
     color: var(--text-color-tree, #757575);
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: left;   
 }
 
 .section-areaofinterest {
-    width: 1600px;    
+    width: 1600px;
+    padding-top: 24px;
 }
     
 .title-two {
@@ -177,12 +193,13 @@ link:hover, link:focus {
     color: var(--text-color-two, #212121);
     font-size: 36px;
     font-weight: 700;
-    line-height: 42px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
 }  
         
 .section-ourteam {
+    padding-top: 24px;
     background-color: var(--bg-color-tree, #F5F4FA);
     height: 648px; 
     width: 1600px; 
@@ -201,7 +218,7 @@ link:hover, link:focus {
     color: var(--text-color-two, #212121);
     font-size: 16px;
     font-weight: 500;
-    line-height: 19px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
 }
@@ -211,7 +228,7 @@ link:hover, link:focus {
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
-    line-height: 19px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
 }
@@ -230,7 +247,7 @@ link:hover, link:focus {
     padding-left: 215px;
     font-size: 26px;
     font-weight: 700;
-    line-height: 31px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: left;
 }
@@ -252,7 +269,7 @@ link:hover, link:focus {
     font-style: normal;
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: left;
 }
@@ -261,7 +278,7 @@ link:hover, link:focus {
     padding-left: 215px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--text-color-six, rgba(255, 255, 255, 0.6));
 }
@@ -271,11 +288,92 @@ link:hover, link:focus {
     padding-bottom: 60px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--text-color-six, rgba(255, 255, 255, 0.6));
 }
 
+.section-fivebuttons {
+    padding-top: 94px;
+    padding-bottom: 26px;
+    width: 1600px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-portfolio {
+    border-style: none;
+    margin-left: 4px;
+    margin-right: 4px;
+    background: var(--bg-color-tree, #F5F4FA);
+    color: var(--text-color-two, #212121);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.button-portfolio:hover, .button-portfolio:focus {
+    background: var(--bg-color-five, #2196F3);
+    color: var(--text-color-four, #FFFFFF)
+}
+
+.section-firstraw {
+    padding-top: 30px;
+    width: 1600px;
+    text-align: left;
+}
+
+.section-middleraw {
+    padding-top: 30px;
+    width: 1600px;
+    text-align: left;
+}
+
+.section-lastraw {
+    padding-top: 30px;
+    padding-bottom: 94px;
+    width: 1600px;
+    text-align: left;
+}
+    
+
+.portfolio-photo-box {
+    background-color: var(--bg-color-one, #FFFFFF);
+    box-sizing: border-box;
+    height: 404px;
+    width: 372px;
+    border-color: var(--border-color-one,#EEEEEE);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.portfolio-title-four {
+    color: var(--text-color-two, #212121);
+    margin: 0px;
+    text-indent: 20px;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-align: left;
+}
+
+.portfolio-text-photo {
+    color: var(--text-color-tree, #757575);
+    margin: 0px;
+    text-indent: 20px;
+    padding-top: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
 
             
 
