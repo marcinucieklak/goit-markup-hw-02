@@ -1,16 +1,133 @@
 /* Zadanie domowe studentów #2 */
 
 :root {
-    --brand-color: #2196F3;
+    --logo-color: #2196F3;
+    --logo-color-dark: #000000;
+    --logo-color-light: #FFFFFF;
+    --text-collor-one:#000000;
+    --text-color-two:#212121;
+    --text-color-tree:#757575;
+    --text-color-four:#FFFFFF;
+    --text-color-five:#2196F3;
+    --bg-color-one: #ffffff;
+    --bg-color-two: #E5E5E5;
+    --bg-color-tree: #F5F4FA;
+    --bg-color-four: #2F303A;
+    --bg-color-five: #2196F3;
 }
 
 body {
     font-family: 'Roboto'
 }
 
+.link {
+    text-decoration: none;
+}
+
+link:hover, link:focus {
+   color: var(--text-color-five, #2196F3);  
+}
+
+.header-link-navigation {
+    margin-inline: 32px;
+    color: var(--text-color-two, #212121);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-align: left
+}
+
+.header-link-navigation:hover, .header-link-navigation:focus {
+    color: var(--text-color-five, #2196F3);
+}
+
+.header-link-addresses{
+    margin-inline: 32px;
+    color: var(--text-color-tree, #757575);
+    font-size: 14px; 
+    font-weight: 500; 
+    line-height: 16px; 
+    letter-spacing: 0.02em; 
+    text-align: left;
+}
+
+.header-link-addresses:hover, .header-link-addresses:focus {
+    color: var(--text-color-five, #2196F3); 
+}
+
+
+
 .header {
     height: 80px;
     width: 1600px;
     display: flex;
     justify-content: space-between;
+}
+
+.header-logo{
+    padding-top: 24px;
+    padding-left: 215px; 
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-align: left;   
+}
+.header-logo-web {
+font-family: Raleway;
+color: var(--logo-color, #2196F3); 
+}
+
+.header-logo-studio {
+margin-left:-5px;
+color:var(--logo-color-dark, #000000);
+}
+
+.header-navigation {
+    display: inline-block;
+    justify-content: center;
+    padding-top: 32px;
+}
+
+.header-addresses {
+    display: inline-block;
+    justify-content: center;    
+    padding-top: 32px; 
+    padding-right: 215px; 
+}
+
+.section-title {
+    background-color: var(--bg-color-four, #2F303A);
+    height: 600px;
+    width: 1600px; 
+    text-align: center;
+}
+
+.section-title-title {
+    color: var(--text-color-four, #FFFFFF);
+    text-align: center;
+    padding-top: 200px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+}
+
+
+.section-title-button {
+width: 200px;
+height: 50px;
+background: var(--bg-color-five, #2196F3);
+color: var(--text-color-four, #FFFFFF);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+font-size: 16px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0.06em;
+text-align: center;
 }
